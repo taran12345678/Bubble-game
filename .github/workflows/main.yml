@@ -1,22 +1,22 @@
-# name: Deploy to Firebase Hosting
+name: Deploy to Firebase Hosting
 
-# on:
-#   push:
-#     branches:
-#       - main  # Change this to your main branch name if different
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name if different
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#     - name: Checkout code
-#       uses: actions/checkout@v2
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-#     - name: Install Firebase CLI
-#       run: npm install -g firebase-tools
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools
 
-#     - name: Deploy to Firebase
-#       env:
-#         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-#       run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+    - name: Deploy to Firebase
+      env:
+        FIREBASE_TOKEN: ${{ secrets.game }}
+      run: firebase deploy --token ${{ secrets.game}}
