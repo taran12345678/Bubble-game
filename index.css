@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(187, 214, 236);
+}
+#pop{
+    height: 80%;
+    position: absolute ;
+    width: 80%;
+    top:10%;
+    left: 10%;
+    background-color: rgb(238, 245, 243);
+    border-radius: 20px;
+    overflow: hidden;
+}
+#nav{
+    position: relative;
+    background-color: rgb(144, 210, 243);
+    height: 12%;
+    overflow: hidden;
+    align-items: center;
+}
+#nav2{
+    display: flex;
+    padding: 2px 2px;
+    padding: 0 20%;
+     align-items: center;
+    justify-content: space-between;
+    /* background-color: black; */
+    margin-top: 23px;
+}
+.box{
+     display: flex;
+     height: auto;
+     width: auto;
+  
+}
+.num{
+    background-color: white;
+    width: 80px;
+    padding: 2px;
+     font: 1em sans-serif;;
+    color: rgb(47, 44, 250);
+ 
+    height: 100%;
+    text-align: center; 
+    border-radius: 5px;
+    font-size: x-large;
+  
+    margin-top: 11px;
+ font-size: large;
+  text-align: center;
+    margin-left: 8px;
+   
+    border-radius: 5px;
+} 
+#bootompanel{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    
+   
+    
+
+}
+.bubble{
+   display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    align-items: center;
+    background-color:rgb(144, 210, 243);
+   
+
+}
+* Apply staggered delay for each bubble */
+.bubble:nth-child(n) {
+    animation-delay: calc(0.5s * (n - 1)); /* Delay each bubble by 0.5s */
+}
+
+/* Define keyframes for the animation */
+@keyframes bubbleUp {
+    0% {
+        transform: translateY(100px); /* Start from below */
+        opacity: 0;  /* Start invisible */
+    }
+    50% {
+        opacity: 1;  /* Fade in */
+    }
+    100% {
+        transform: translateY(0); /* Move to the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+.playorno{
+    align-items: center;
+    justify-content: center;
+}
+
+.playorno #h1 {
+    
+    width: 400%;
+    
+    /* margin-left: -54px; Increase the negative value to move it higher */
+}
+
+
+#btn1 {
+    background-color: red;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+#btn2 {
+    background-color: blue;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+
